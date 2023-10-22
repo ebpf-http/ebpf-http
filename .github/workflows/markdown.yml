@@ -1,0 +1,12 @@
+---
+name: Markdown
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    name: markdownlint-cli
+    uses: nosborn/github-action-markdown-cli@v3.2.0
+    with:
+      files: .
+      dot: true
